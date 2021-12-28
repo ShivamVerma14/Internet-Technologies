@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "name": "Molly",
+            "age": "1",
+            "weight": "2",
+            "type": "Cat",
+            "likes": "Chicken"
+        },
+        {
+            "name": "Franky",
+            "age": "2",
+            "weight": "5",
+            "type": "Dog",
+            "likes": "Cheese"
+        },
+        {
+            "name": "Luna",
+            "age": "0.5",
+            "weight": "0.1",
+            "type": "Parrot",
+            "likes": "Red Chilly"
+        },
+        {
+            "name": "Max",
+            "age": "2",
+            "weight": "10",
+            "type": "Dog",
+            "likes": "Salmon"
+        },
+        {
+            "name": "Bella",
+            "age": "1",
+            "weight": "0.5",
+            "type": "Bird",
+            "likes": "Mix Seeds"
+        }
+    ]
+}

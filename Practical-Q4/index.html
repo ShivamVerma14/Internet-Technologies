@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Multiplication Table</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <h1>Multiplication Table (2 to 10)</h2>
+            </header>
+
+            <div id="table" class="text-center"></div>
+
+        </div>
+
+        <!-- Custom JS -->
+        <script>
+            var number = 2;
+            var timer = setInterval(multiply, 5000);
+
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+
+                return color;
+            }
+
+            function multiply() {
+                var element = document.getElementById("table");
+                var str = "";
+
+                for(let i = 1; i <= 10; i++) {
+                    var multiple = i * number;
+                    str = str + " " + multiple;
+                }
+
+                str = "<div id = " + number + ">" + str + "</div>";
+                element.innerHTML = element.innerHTML + "<br>" + str;
+
+                var row = document.getElementById(number);
+                row.style.color = getRandomColor();
+                row.style.fontSize = 12 + number * 3 + "px";
+
+                number++;
+
+                if(number > 10)
+                    clearInterval(timer, 9);
+            }
+        </script>
+
+        <!-- Boostrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    </body>
+</html>

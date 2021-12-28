@@ -1,0 +1,27 @@
+{
+    "Countries": [
+        {"name": "USA"},
+        {"name": "UK"},
+        {"name": "Russia"},
+        {"name": "France"},
+        {"name": "Italy"},
+        {"name": "China"},
+        {"name": "Brazil"},
+        {"name": "Singapore"},
+        {"name": "Japan"},
+        {"name": "Canada"}        
+    ],
+
+    "States": [
+        {"name": "Andhra Pradesh"},
+        {"name": "Bihar"},
+        {"name": "Haryana"},
+        {"name": "Himachal Pradesh"},
+        {"name": "Gujarat"},
+        {"name": "Maharashtra"},
+        {"name": "Nagaland"},
+        {"name": "Uttar Pradesh"},
+        {"name": "Tamil Nadu"},
+        {"name": "Telangana"}
+    ]
+}
